@@ -1,17 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  color: rgb(56, 25, 88);
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+button {
+  background-color: rgb(56, 25, 88);
+  margin-top: 1rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .container {
+  margin-top: 2rem;
   width: 450px;
   height: 450px;
   display: flex;
@@ -19,9 +46,18 @@ body {
   border-top: 3px;
 }
 
-.card {
+.box {
   width: 150px;
   height: 150px;
+  font-size: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
 }
 
 .bt {
